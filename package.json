@@ -1,0 +1,110 @@
+{
+  "name": "PoptypeDashboard",
+  "version": "1.0.0",
+  "description": "This dashboard displays Poptype user data.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "express",
+    "webpack",
+    "node"
+  ],
+  "author": "Erika Stiebel and Emma Smedslund",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server",
+    "build": "rimraf dist && set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "eslint": "eslint .",
+    "jscs": "jscs .",
+    "postinstall": "npm run build"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/moment"
+    ]
+  },
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-cli": "^6.4.0",
+    "babel-jscs": "^2.0.5",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "bootstrap-loader": "^1.0.10",
+    "bootstrap-sass": "^3.3.6",
+    "classnames": "^2.2.3",
+    "cors": "^2.7.1",
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^1.6.1",
+    "http-auth": "^2.3.3",
+    "json-loader": "^0.5.3",
+    "mixpanel-data-export": "^1.8.2",
+    "moment": "^2.12.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.6.0",
+    "react": "^0.14.3",
+    "react-bootstrap": "^0.28.5",
+    "react-dom": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "react-redux": "^4.4.1",
+    "react-transform-hmr": "^1.0.0",
+    "redux": "^3.3.1",
+    "redux-thunk": "^2.0.1",
+    "resolve-url-loader": "^1.4.3",
+    "rimraf": "^2.4.3",
+    "sass-loader": "^3.2.0",
+    "stats-webpack-plugin": "^0.2.2",
+    "style-loader": "^0.12.4",
+    "superagent": "^1.8.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.15",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-eslint": "^4.1.6",
+    "babel-jest": "^12.0.2",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-jest": "^12.0.2",
+    "chai": "^3.2.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.4.2",
+    "jest-cli": "^12.0.2",
+    "jscs": "^2.1.1",
+    "jsdom": "^6.5.1",
+    "mocha": "^2.3.3",
+    "mocha-jsdom": "^1.0.0",
+    "nodemon": "^1.9.1",
+    "react-addons-test-utils": "^0.14.8",
+    "redux-devtools": "^3.1.1",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0",
+    "stats-webpack-plugin": "^0.2.1"
+  }
+}

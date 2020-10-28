@@ -1,0 +1,94 @@
+//Profiles module
+.pending-registrations {
+
+  .fa-user {
+    color: $red;
+  }
+
+  .flex-wrapper {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    &.top-row {
+      flex: 1;
+    }
+
+    &.mid-row {
+      flex: 0.5;
+    }
+
+    &.list {
+      flex: 2;
+    }
+  }
+
+  .flex-col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .latest-text {
+    align-items: center;
+    color: $grey;
+    display: flex;
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 1.5em;
+    vertical-align: middle;
+  }
+
+  .reg-num {
+    color: $light-grey;
+    flex: 1;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  // .reg-text {
+  //   color: $grey;
+  //   font-size: 0.8em;
+  //   font-style: italic;
+  //   line-height: 1em;
+  //
+  //   &.num {
+  //     color: $light-grey;
+  //     font-size: 1.1em;
+  //     font-style: normal;
+  //   }
+  //
+  //   &.txt {
+  //     font-size: 0.6em;
+  //     line-height: 1.5em;
+  //   }
+  // }
+
+  .today-num-red {
+    color: $red;
+  }
+
+  .today-num-grey {
+    color: $light-grey;
+  }
+
+  .reg-num-red {
+    color: $red;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+  }
+
+  .reg-num-grey {
+    color: $light-grey;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+  }
+
+  .reg-email {
+    flex: 1;
+    margin-top: 0.5em;
+  }
+}

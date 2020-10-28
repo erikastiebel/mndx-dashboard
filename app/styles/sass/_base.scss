@@ -1,0 +1,64 @@
+body {
+  background-color: $background-dark-grey;
+  color: $lightest-grey;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  @media (min-width: 1800px) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  color: $lightest-grey;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  margin: 0.75em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  list-style: none;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+
+  &:nth-child(1) {
+    color: $lightest-grey;
+  }
+
+  &:nth-child(2) {
+    color: $light-grey;
+  }
+
+  &:nth-child(3) {
+    color: $grey;
+  }
+
+  &:nth-child(4) {
+    color: $grey;
+    opacity: 0.8;
+  }
+
+  &:nth-child(5) {
+    color: $grey;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,62 @@
+.shared {
+
+  .fa-share {
+    color: $blue;
+  }
+
+  .flex-wrapper {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .shared-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .fa {
+      font-size: 2em;
+    }
+
+    .fa-envelope {
+      color: $white;
+    }
+
+    .fa-twitter {
+      color: $twitter-blue;
+    }
+
+    .fa-facebook {
+      color: $facebook-blue;
+    }
+
+    .shared-inner {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shared-num {
+      color: $light-grey;
+      font-size: 1.8em;
+      font-weight: 600;
+      line-height: 0.8em;
+    }
+
+    .shared-num-grey {
+      color: $light-grey;
+    }
+
+    .shared-num-blue {
+      color: $blue;
+    }
+
+    .shared-txt {
+      color: $grey;
+      font-size: 0.8em;
+      font-style: italic;
+      line-height: 1.5em;
+    }
+  }
+}
